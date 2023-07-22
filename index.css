@@ -1,0 +1,285 @@
+.sidenav{
+    background-color: lightgray;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 350px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  margin-left: 60px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-left: 10px;
+  padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .main {
+    margin-left: 410px; /* Same as the width of the sidebar */
+    margin-top: 30px;
+    padding: 0px 50px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }  
+
+  .sidenav1{
+    background-color: white;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 60px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.flex-container {
+   
+   display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    
+    margin-right: 50px;
+}  
+
+.flex-child:first-child {
+    margin-right: 0px;
+} 
+
+.content
+{
+    margin-left: 450px;
+
+}
+
+.pieContainer {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .pieBackground{
+    background-color:rgba(245, 245, 245, 0.969);
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    
+    -webkit-box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, .75);      
+    box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, .75);
+  }
+  
+  .stat-circle-cover {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    
+    background-color:white;
+    height: 80%;
+    width: 80%;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    
+    -moz-box-shadow:inset 0px 0px 5px #666;
+    -webkit-box-shadow:inset 0px 0px 5px #666;
+    box-shadow:inset 0px 0px 1px #666;
+  }
+  
+  .stat-circle-cover span.stat-number {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 80px;
+    color:black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    font-family: Helvetica-Neue, Helvetica, arial, verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  .pie {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    clip: rect(0px, 50px, 100px, 0px);
+  }
+  
+  .hold {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    clip: rect(0px, 100px, 100px, 50px);
+  }
+  
+  #pieSlice25 .pie {
+    background-color:rgb(15, 91, 82);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    
+    background-image: -webkit-linear-gradient(top, rgb(15, 91, 82),rgb(15, 91, 82));
+  }
+  
+  #pieSlice50 .pie {
+    background-color: rgb(15, 91, 82);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    
+    
+  }
+  
+  #pieSlice75_1 .pie {
+    background-color: rgb(15, 91, 82);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  #pieSlice75_2 {
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform:rotate(180deg);
+  }
+  
+  #pieSlice75_2 .pie {
+    background-color: rgb(15, 91, 82);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  #pieSlice99_1 .pie {
+    background-color: rgb(15, 91, 82);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  #pieSlice99_2 {
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform:rotate(180deg);
+  }
+  
+  #pieSlice99_2 {
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform:rotate(180deg);
+  }
+  
+  #pieSlice99_2 .pie {
+    background-color: rgb(15, 91, 82);
+    -webkit-transform: rotate(178deg);
+    -moz-transform: rotate(178deg);
+    -o-transform: rotate(178deg);
+    transform: rotate(178deg);
+    
+  }
+  
+  
+  .header_icons span{
+    flex: 1 fr;
+    justify-content: space-between;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.xyz
+{
+    background-color: beige;
+}
+.flex-container
+{
+    padding: 0;
+    margin-left: 0px;
+    
+    list-style: none;
+    
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+.column
+{
+    -webkit-flex-direction: column; 
+    flex-direction: column; 
+    float: left;
+}
+.flex-item {
+    background: white;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    
+    line-height: 50px;
+    color: gray;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+  .social
+  {
+    float: right;
+  }
+  .wrapper
+  {
+    
+    width: 300px;
+    height: 450px;
+    background-color:rgb(241, 241, 241);
+    padding: 40px 40px 40px 40px;
+  }
+  .slider
+  {
+height: 5px;
+border-radius: 5px;
+background: #ddd;
+  }
+  slider.progress
+  {
+height: 5px;
+left: 0;
+position: absolute;
+border-radius: 5px;
+background: #17A288;
+  }
